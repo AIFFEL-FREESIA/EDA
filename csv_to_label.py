@@ -27,6 +27,7 @@ def csv_to_label(summary_path, list_path, save_path, width, height):
             raise Exception(save_path)
     except Exception as e:
         print(f'[Error] No such file or directory: {e}')
+        return
     
 
     CLASSES = {
